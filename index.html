@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="javascript/main-ad.js" defer></script>
+    <script type="module" src="javascript/top-tv.js" defer></script>
+    <script type="module" src="javascript/search-page.js" defer></script>
+    <link rel="stylesheet" href="component/header/header.css">
+    <link rel="stylesheet" href="component/main-ads/main-ads.css">
+    <link rel="stylesheet" href="component/top-tv/top-tv.css">
+    <link rel="stylesheet" href="component/search/search.css">
+    <link rel="stylesheet" href="common/reset.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css'
+    integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=='
+    crossorigin='anonymous'/>
+</head>
+<body>
+    <head>
+        <div class="navigation">
+            <div class="leftSide">
+                <img class="logoImg" src="photo/tvinglogo.svg" alt="">
+                <button class="btns">시리즈</button>
+                <button class="btns">영화</button>
+                <button class="btns">라이브</button>
+                <button class="btns">파라마운트+</button>
+            </div>
+            <div class="rightSide">
+                <i class="fa-solid fa-magnifying-glass magnifier "></i>
+                <i class="fas fa-xmark  close"></i>
+            </div>
+        </div>
+    </head>
+    <div class="mainPage">
+        <div class="ads" style="transform: translate(0px);">
+            <div class="imSolo mainImg">
+                <img style="border-radius: 20px;" class="slideImg" src="photo/imsolo-ezgif.com-webp-to-jpg-converter.jpg" alt="">
+                <img class="slideletter" src="photo/imsoloLetter-ezgif.com-webp-to-png-converter.png" alt="">
+            </div>
+            <div class="uquiz mainImg">
+                <img style="border-radius: 20px;" class="slideImg" src="photo/uquizontheblock-ezgif.com-webp-to-jpg-converter.jpg" alt="">
+                <img class="slideletter" src="photo/uquizletter-ezgif.com-webp-to-png-converter.png" alt="">
+            </div>
+            <div class="flower mainImg">
+                <img style="border-radius: 20px;" class="slideImg" src="photo/flowerInTheSand-ezgif.com-webp-to-jpg-converter.jpg" alt="">
+                <img class="slideletter" src="photo/flowerletter-ezgif.com-webp-to-png-converter.png" alt="">
+            </div>
+            <div class="topgun mainImg">
+                <img style="border-radius: 20px;" class="slideImg" src="photo/topgunMaverick-ezgif.com-webp-to-jpg-converter.jpg" alt="">
+                <img class="slideletter" src="photo/topgunletter-ezgif.com-webp-to-png-converter.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="dots">
+                <button class="firstDot">
+                    <i class="fa-solid fa-circle"></i>
+                </button>
+                <button class="secondDot">
+                    <i class="fa-regular fa-circle"></i>
+                </button>
+                <button class="thirdDot">
+                    <i class="fa-regular fa-circle"></i>
+                </button>
+                <button class="fourthDot">
+                    <i class="fa-regular fa-circle"></i>
+                </button>
+            </div>
+            <!-- <div class="arrow">
+                <button class="leftArrow">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="rightArrow">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div> -->
+        </div>
+        <div class="tv-container">
+            <h2 class="tvshow">오늘의 티빙 추천</h2>
+            <!-- <button class="tvleftArrow">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button> -->
+            <div class="topTvShow">
+            </div>
+            <!-- <button class="tvrightArrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button> -->
+        </div>
+        <div class="mv-container">
+            <h2 class="mvshow">오늘의 티빙 영화 추천</h2>
+            <!-- <button class="tvleftArrow">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button> -->
+            <div class="topMvShow">
+            </div>
+            <!-- <button class="tvrightArrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button> -->
+
+        </div>
+    </div>
+    <div class="search-page">
+        <div class="search-box">
+            <input placeholder="제목을 입력해주세요" class="search" type="text">
+            <button class="submit">확인</button>
+        </div>
+        <div class="resultCard">
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

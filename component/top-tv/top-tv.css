@@ -1,0 +1,146 @@
+.tv-container, .mv-container, .roco-container {
+  width: 100%;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.tv-container .tvshow, .tv-container .mvshow, .tv-container .rocoshow, .mv-container .tvshow, .mv-container .mvshow, .mv-container .rocoshow, .roco-container .tvshow, .roco-container .mvshow, .roco-container .rocoshow {
+  position: relative;
+  left: 50px;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  display: flex;
+}
+.tv-container .tvleftArrow, .mv-container .tvleftArrow, .roco-container .tvleftArrow {
+  position: relative;
+  top: 200px;
+  left: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+.tv-container .tvleftArrow:hover, .mv-container .tvleftArrow:hover, .roco-container .tvleftArrow:hover {
+  cursor: pointer;
+  color: #444;
+}
+.tv-container .tvrightArrow, .mv-container .tvrightArrow, .roco-container .tvrightArrow {
+  height: 280px;
+  width: 100px;
+  position: relative;
+  bottom: 355px;
+  right: -95%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7175245098) 25%, rgba(0, 0, 0, 0.9528186275) 60%, rgb(0, 0, 0) 100%);
+  border: none;
+  font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+}
+.tv-container .tvrightArrow :hover, .mv-container .tvrightArrow :hover, .roco-container .tvrightArrow :hover {
+  cursor: pointer;
+  color: #444;
+}
+.tv-container .topTvShow, .tv-container .topMvShow, .tv-container .topRocoShow, .mv-container .topTvShow, .mv-container .topMvShow, .mv-container .topRocoShow, .roco-container .topTvShow, .roco-container .topMvShow, .roco-container .topRocoShow {
+  width: 100%;
+  height: 250px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(30, 1fr);
+  padding-left: 30px;
+  padding-top: 15px;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+  position: relative;
+  gap: 20px;
+}
+.tv-container .topTvShow::-webkit-scrollbar, .tv-container .topMvShow::-webkit-scrollbar, .tv-container .topRocoShow::-webkit-scrollbar, .mv-container .topTvShow::-webkit-scrollbar, .mv-container .topMvShow::-webkit-scrollbar, .mv-container .topRocoShow::-webkit-scrollbar, .roco-container .topTvShow::-webkit-scrollbar, .roco-container .topMvShow::-webkit-scrollbar, .roco-container .topRocoShow::-webkit-scrollbar {
+  display: none;
+}
+.tv-container .topTvShow .card, .tv-container .topMvShow .card, .tv-container .topRocoShow .card, .mv-container .topTvShow .card, .mv-container .topMvShow .card, .mv-container .topRocoShow .card, .roco-container .topTvShow .card, .roco-container .topMvShow .card, .roco-container .topRocoShow .card {
+  position: relative;
+}
+.tv-container .topTvShow .card .cardBox, .tv-container .topMvShow .card .cardBox, .tv-container .topRocoShow .card .cardBox, .mv-container .topTvShow .card .cardBox, .mv-container .topMvShow .card .cardBox, .mv-container .topRocoShow .card .cardBox, .roco-container .topTvShow .card .cardBox, .roco-container .topMvShow .card .cardBox, .roco-container .topRocoShow .card .cardBox {
+  position: relative;
+}
+.tv-container .topTvShow .card .cardBox:hover, .tv-container .topMvShow .card .cardBox:hover, .tv-container .topRocoShow .card .cardBox:hover, .mv-container .topTvShow .card .cardBox:hover, .mv-container .topMvShow .card .cardBox:hover, .mv-container .topRocoShow .card .cardBox:hover, .roco-container .topTvShow .card .cardBox:hover, .roco-container .topMvShow .card .cardBox:hover, .roco-container .topRocoShow .card .cardBox:hover {
+  cursor: pointer;
+  margin-top: -2;
+  margin-right: 2px;
+  transition: margin 0.2s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.tv-container .topTvShow .card .cardBox .info, .tv-container .topMvShow .card .cardBox .info, .tv-container .topRocoShow .card .cardBox .info, .mv-container .topTvShow .card .cardBox .info, .mv-container .topMvShow .card .cardBox .info, .mv-container .topRocoShow .card .cardBox .info, .roco-container .topTvShow .card .cardBox .info, .roco-container .topMvShow .card .cardBox .info, .roco-container .topRocoShow .card .cardBox .info {
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease-in-out;
+}
+.tv-container .topTvShow .card .cardBox .info:hover, .tv-container .topMvShow .card .cardBox .info:hover, .tv-container .topRocoShow .card .cardBox .info:hover, .mv-container .topTvShow .card .cardBox .info:hover, .mv-container .topMvShow .card .cardBox .info:hover, .mv-container .topRocoShow .card .cardBox .info:hover, .roco-container .topTvShow .card .cardBox .info:hover, .roco-container .topMvShow .card .cardBox .info:hover, .roco-container .topRocoShow .card .cardBox .info:hover {
+  opacity: 1;
+}
+.tv-container .topTvShow .card .cardBox img, .tv-container .topMvShow .card .cardBox img, .tv-container .topRocoShow .card .cardBox img, .mv-container .topTvShow .card .cardBox img, .mv-container .topMvShow .card .cardBox img, .mv-container .topRocoShow .card .cardBox img, .roco-container .topTvShow .card .cardBox img, .roco-container .topMvShow .card .cardBox img, .roco-container .topRocoShow .card .cardBox img {
+  border-radius: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 130px;
+  height: 200px;
+  display: flex;
+  position: relative;
+  z-index: -999;
+}
+.tv-container .topTvShow .card .cardBox .new, .tv-container .topMvShow .card .cardBox .new, .tv-container .topRocoShow .card .cardBox .new, .mv-container .topTvShow .card .cardBox .new, .mv-container .topMvShow .card .cardBox .new, .mv-container .topRocoShow .card .cardBox .new, .roco-container .topTvShow .card .cardBox .new, .roco-container .topMvShow .card .cardBox .new, .roco-container .topRocoShow .card .cardBox .new {
+  border-radius: 2px;
+  background-color: red;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  z-index: 1;
+}
+.tv-container .topTvShow .card .cardBox .sub, .tv-container .topMvShow .card .cardBox .sub, .tv-container .topRocoShow .card .cardBox .sub, .mv-container .topTvShow .card .cardBox .sub, .mv-container .topMvShow .card .cardBox .sub, .mv-container .topRocoShow .card .cardBox .sub, .roco-container .topTvShow .card .cardBox .sub, .roco-container .topMvShow .card .cardBox .sub, .roco-container .topRocoShow .card .cardBox .sub {
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.678);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  right: 3px;
+  top: 5px;
+  z-index: 1;
+}
+.tv-container .topTvShow .card .cardBox .original, .tv-container .topMvShow .card .cardBox .original, .tv-container .topRocoShow .card .cardBox .original, .mv-container .topTvShow .card .cardBox .original, .mv-container .topMvShow .card .cardBox .original, .mv-container .topRocoShow .card .cardBox .original, .roco-container .topTvShow .card .cardBox .original, .roco-container .topMvShow .card .cardBox .original, .roco-container .topRocoShow .card .cardBox .original {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  position: absolute;
+  bottom: 5px;
+  left: 50px;
+  z-index: 1;
+  display: flex;
+}
+.tv-container .topTvShow .card .cardBox .original .originallogoImg, .tv-container .topMvShow .card .cardBox .original .originallogoImg, .tv-container .topRocoShow .card .cardBox .original .originallogoImg, .mv-container .topTvShow .card .cardBox .original .originallogoImg, .mv-container .topMvShow .card .cardBox .original .originallogoImg, .mv-container .topRocoShow .card .cardBox .original .originallogoImg, .roco-container .topTvShow .card .cardBox .original .originallogoImg, .roco-container .topMvShow .card .cardBox .original .originallogoImg, .roco-container .topRocoShow .card .cardBox .original .originallogoImg {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=top-tv.css.map */

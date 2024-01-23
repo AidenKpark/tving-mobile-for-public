@@ -1,0 +1,61 @@
+body {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+}
+body .mainPage {
+  overflow-x: hidden;
+  position: relative;
+}
+body .mainPage::-webkit-scrollbar {
+  display: none;
+}
+body .mainPage .ads {
+  width: 400vw;
+  height: 200px;
+  transition: transform 0.5s;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+}
+body .mainPage .ads .mainImg {
+  width: 100vw;
+  float: left;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+body .mainPage .ads .mainImg .slideImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -999;
+}
+body .mainPage .ads .mainImg .slideletter {
+  width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  z-index: 1;
+}
+body .mainPage .dots {
+  box-shadow: 5px 5px 5px black;
+  background-color: rgba(68, 68, 68, 0.2);
+  border-radius: 15px;
+  position: absolute;
+  top: 180px;
+  right: 200px;
+  display: flex;
+  gap: 5px;
+}
+body .mainPage .dots .firstDot, body .mainPage .dots .secondDot, body .mainPage .dots .thirdDot, body .mainPage .dots .fourthDot {
+  border: none;
+  background-color: transparent;
+  font-size: 2vw;
+  color: white;
+}/*# sourceMappingURL=main-ads.css.map */

@@ -1,0 +1,60 @@
+.navigation {
+  width: 100vw;
+  height: 65px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.8309917717) 12%, rgba(0, 0, 0, 0.1979385504) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+.navigation .leftSide {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navigation .leftSide .logoImg {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 30%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navigation .leftSide .btns {
+  white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  border: none;
+  color: rgb(225, 225, 225);
+  font-size: 2.5vw;
+  font-weight: 300;
+}
+.navigation .leftSide .btns:hover {
+  cursor: pointer;
+  color: white;
+}
+.navigation .rightSide {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navigation .rightSide .magnifier {
+  font-size: 4vw;
+  color: rgb(225, 225, 225);
+}
+.navigation .rightSide .magnifier:hover {
+  cursor: pointer;
+  color: white;
+}
+.navigation .rightSide .close {
+  display: none;
+  font-size: 4vw;
+  color: rgb(225, 225, 225);
+}
+.navigation .rightSide .close:hover {
+  cursor: pointer;
+  color: white;
+}/*# sourceMappingURL=header.css.map */
